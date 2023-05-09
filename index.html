@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://res.wx.qq.com/t/wx_fed/base/weixin_portal/res/static/css/feadca13629b9dabbc7dbfe97978428e.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body,
+      #box {
+        width: 100%;
+        height: 100%;
+      }
+      .box-middle {
+        height: 900px;
+        width: 100%;
+        background-color: #2aae67;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+      }
+      .box-middle-top {
+        width: 100%;
+        text-align: right;
+        height: 200px;
+      }
+      .box-middle-top p {
+        font-size: 16px;
+        color: rgb(238, 233, 233, 0.6);
+        padding-top: 20px;
+        padding-right: 40px;
+      }
+      .box-middle-logo {
+        text-align: center;
+        width: 100%;
+      }
+      .box-middle-content {
+        width: 100%;
+        text-align: left;
+      }
+      .box-middle-content div {
+        margin-left: 700px;
+        width: 600px;
+        border-top: 1px solid rgb(204, 204, 204, 0.5);
+        padding-top: 20px;
+      }
+      .box-middle-content p {
+        color: white;
+        line-height: 40px;
+        font-size: 22px;
+        position: relative;
+      }
+      .box-middle-content span {
+        position: absolute;
+        right: 0px;
+      }
+      .box-middle-content-1 {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .box-middle-content-1 div {
+        width: 120px;
+        height: 120px;
+        background-color: #39b472;
+        margin-left: 50px;
+        border-radius: 50%;
+        text-align: center;
+      }
+      .box-middle-content-1 div span {
+        font-size: 14px;
+        color: white;
+      }
+      .box-middle-content-1 div i {
+        margin-top: 15px;
+      }
+      .box-middle-content-2 {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      .box-middle-content-2 div {
+        width: 200px;
+        height: 50px;
+        background-color: #39b472;
+        margin-left: 30px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .box-middle-content-2 div span {
+        display: inline-block;
+        margin-top: 12px;
+        color: white;
+        font-size: 16px;
+        margin-left: 5px;
+      }
+      .box-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .box-bottom-1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 1150px;
+      }
+      .box-bottom-1 div {
+        margin: 20px;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background-color: #f5f3f3;
+        border-radius: 8px;
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+      .box-bottom-1 div:hover {
+        transform: scale(1.2);
+      }
+      .box-bottom-1 div i {
+        margin-top: 20%;
+      }
+      .box-bottom-1-content {
+        display: inline-block;
+        margin-top: 30%;
+      }
+      .ios-1 {
+        display: inline-block;
+      }
+      .ios-2 {
+        margin-top: -30px;
+        display: none;
+      }
+      p {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="box-middle">
+        <div class="box-middle-top">
+          <p>WeChat(繁体) | WeChat(EN)</p>
+        </div>
+        <div class="box-middle-logo">
+          <div class="banner__logo"></div>
+        </div>
+        <div class="box-middle-content">
+          <div>
+            <p>微信键盘 0.9.1 for Mac 灰度版发布<span>05-06</span></p>
+            <p>微信 8.0.37 for ios 正式版发布<span>04-27</span></p>
+            <p>微信 8.0.35 for Android 正式版发布<span>04-20</span></p>
+            <p>更多日志 ></p>
+          </div>
+        </div>
+        <div class="box-middle-content-1">
+          <div>
+            <i class="icon-android"></i><br />
+            <span>Android</span>
+          </div>
+          <div class="ios">
+            <i class="icon-ios ios-1"></i><br />
+            <span class="ios-1">iOS</span>
+            <span class="ios-2">
+              <img src="./微信图片_20230509191803.png" alt="" />
+              <br />
+              微信扫码下载
+            </span>
+          </div>
+          <div>
+            <i class="icon-windows"></i><br />
+            <span>Windows</span>
+          </div>
+          <div>
+            <i class="icon-macos"></i><br />
+            <span>macOS</span>
+          </div>
+          <div>
+            <i class="icon-transfer"></i><br />
+            <span>文件传输助手<br />网页版</span>
+          </div>
+        </div>
+        <div class="box-middle-content-2">
+          <div><i class="icon-child-watch"></i><span> 儿童手表版</span></div>
+          <div><i class="icon-car"></i><span> 车载版</span></div>
+          <div><i class="icon-z-out"></i><span> 微信键盘</span></div>
+        </div>
+      </div>
+      <div class="box-bottom">
+        <div class="box-bottom-1">
+          <div><i class="icon-wechat-pay"></i><br /><span>微信支付</span></div>
+          <div><i class="icon-mp"></i><br /><span>公众号</span></div>
+          <div><i class="icon-mini-program"></i><br /><span>小程序</span></div>
+          <div><i class="icon-finder"></i><br /><span>视频号助手</span></div>
+          <div><i class="icon-mini-game"></i><br /><span>小游戏</span></div>
+          <div><i class="icon-mini-store"></i><br /><span>小商店</span></div>
+          <div><i class="icon-sticker"></i><br /><span>表情开放平台</span></div>
+          <div>
+            <i class="icon-search"></i><br /><span>搜一搜开放平台</span>
+          </div>
+          <div>
+            <i class="icon-red-pocket"></i><br /><span>红包封面开放平台</span>
+          </div>
+          <div><i class="icon-openai"></i><br /><span>对话开放平台</span></div>
+          <div>
+            <i class="icon-open-platform"></i><br /><span>开放社区</span>
+          </div>
+          <div><i class="icon-service"></i><br /><span>服务市场</span></div>
+          <div><i class="icon-wecom"></i><br /><span>企业微信</span></div>
+          <div><i class="icon-edu"></i><br /><span>微信学堂</span></div>
+          <div>
+            <i class="icon-wedesign"></i><br /><span>官方设计资源</span>
+          </div>
+          <div><span class="box-bottom-1-content">开放平台</span></div>
+          <div><span class="box-bottom-1-content">硬件平台</span></div>
+          <div><span class="box-bottom-1-content">微信广告</span></div>
+          <div><span class="box-bottom-1-content">官方文档</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    //鼠标悬浮变色
+    $(".box-middle-content-1 div").on("mouseover", function () {
+      $(this).css("background", "#4aba7e");
+      $(".box-middle-content-1 div").not($(this)).css("background", "#39b472");
+    });
+    $(".box-middle-content-1 div").on("mouseleave", function () {
+      $(".box-middle-content-1 div").css("background", "#39b472");
+    });
+    //控制ios状态
+    $(".ios").on("mouseover", function () {
+      $(".ios-1").css("display", "none");
+      $(".ios-2").css("display", "inline-block");
+      $(this).css({ "background-color": "#2aae67" });
+    });
+    $(".ios").on("mouseleave", function () {
+      $(".ios-1").css("display", "inline-block");
+      $(".ios-2").css("display", "none");
+    });
+  </script>
+</html>
